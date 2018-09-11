@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B55139632147EC70004E1266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55139622147EC70004E1266 /* AppDelegate.swift */; };
+		B55139652147EC70004E1266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55139642147EC70004E1266 /* ViewController.swift */; };
+		B55139682147EC70004E1266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55139662147EC70004E1266 /* Main.storyboard */; };
+		B551396A2147EC71004E1266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55139692147EC71004E1266 /* Assets.xcassets */; };
+		B551396D2147EC71004E1266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B551396B2147EC71004E1266 /* LaunchScreen.storyboard */; };
+		B55139782147EC71004E1266 /* PoseNet_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55139772147EC71004E1266 /* PoseNet_SwiftTests.swift */; };
+		B55139832147EC71004E1266 /* PoseNet_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55139822147EC71004E1266 /* PoseNet_SwiftUITests.swift */; };
+		CBB2F189B528DEC75FF0426D /* Pods_PoseNet_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA74F3E766EAA57E07C7AA3F /* Pods_PoseNet_Swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B55139742147EC71004E1266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B55139572147EC70004E1266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B551395E2147EC70004E1266;
+			remoteInfo = "PoseNet-Swift";
+		};
+		B551397F2147EC71004E1266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B55139572147EC70004E1266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B551395E2147EC70004E1266;
+			remoteInfo = "PoseNet-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA74F3E766EAA57E07C7AA3F /* Pods_PoseNet_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoseNet_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B551395F2147EC70004E1266 /* PoseNet-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PoseNet-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55139622147EC70004E1266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B55139642147EC70004E1266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B55139672147EC70004E1266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B55139692147EC71004E1266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B551396C2147EC71004E1266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B551396E2147EC71004E1266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55139732147EC71004E1266 /* PoseNet-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PoseNet-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55139772147EC71004E1266 /* PoseNet_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNet_SwiftTests.swift; sourceTree = "<group>"; };
+		B55139792147EC71004E1266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B551397E2147EC71004E1266 /* PoseNet-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PoseNet-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55139822147EC71004E1266 /* PoseNet_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNet_SwiftUITests.swift; sourceTree = "<group>"; };
+		B55139842147EC71004E1266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6D64DAAB877416EC176436 /* Pods-PoseNet-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoseNet-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoseNet-Swift/Pods-PoseNet-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		FABC9AD63312AFFB569E8FC0 /* Pods-PoseNet-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoseNet-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoseNet-Swift/Pods-PoseNet-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B551395C2147EC70004E1266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB2F189B528DEC75FF0426D /* Pods_PoseNet_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55139702147EC71004E1266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B551397B2147EC71004E1266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CFE7921915B45FF530FC9CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FABC9AD63312AFFB569E8FC0 /* Pods-PoseNet-Swift.debug.xcconfig */,
+				EA6D64DAAB877416EC176436 /* Pods-PoseNet-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82BD75F8CCB4CA87AEFE82AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA74F3E766EAA57E07C7AA3F /* Pods_PoseNet_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55139562147EC70004E1266 = {
+			isa = PBXGroup;
+			children = (
+				B55139612147EC70004E1266 /* PoseNet-Swift */,
+				B55139762147EC71004E1266 /* PoseNet-SwiftTests */,
+				B55139812147EC71004E1266 /* PoseNet-SwiftUITests */,
+				B55139602147EC70004E1266 /* Products */,
+				2CFE7921915B45FF530FC9CF /* Pods */,
+				82BD75F8CCB4CA87AEFE82AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B55139602147EC70004E1266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B551395F2147EC70004E1266 /* PoseNet-Swift.app */,
+				B55139732147EC71004E1266 /* PoseNet-SwiftTests.xctest */,
+				B551397E2147EC71004E1266 /* PoseNet-SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B55139612147EC70004E1266 /* PoseNet-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B55139622147EC70004E1266 /* AppDelegate.swift */,
+				B55139642147EC70004E1266 /* ViewController.swift */,
+				B55139662147EC70004E1266 /* Main.storyboard */,
+				B55139692147EC71004E1266 /* Assets.xcassets */,
+				B551396B2147EC71004E1266 /* LaunchScreen.storyboard */,
+				B551396E2147EC71004E1266 /* Info.plist */,
+			);
+			path = "PoseNet-Swift";
+			sourceTree = "<group>";
+		};
+		B55139762147EC71004E1266 /* PoseNet-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B55139772147EC71004E1266 /* PoseNet_SwiftTests.swift */,
+				B55139792147EC71004E1266 /* Info.plist */,
+			);
+			path = "PoseNet-SwiftTests";
+			sourceTree = "<group>";
+		};
+		B55139812147EC71004E1266 /* PoseNet-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B55139822147EC71004E1266 /* PoseNet_SwiftUITests.swift */,
+				B55139842147EC71004E1266 /* Info.plist */,
+			);
+			path = "PoseNet-SwiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B551395E2147EC70004E1266 /* PoseNet-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55139872147EC71004E1266 /* Build configuration list for PBXNativeTarget "PoseNet-Swift" */;
+			buildPhases = (
+				54359D8438039FD804DED1A8 /* [CP] Check Pods Manifest.lock */,
+				B551395B2147EC70004E1266 /* Sources */,
+				B551395C2147EC70004E1266 /* Frameworks */,
+				B551395D2147EC70004E1266 /* Resources */,
+				474C0DE05CA9A3EB685B23C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PoseNet-Swift";
+			productName = "PoseNet-Swift";
+			productReference = B551395F2147EC70004E1266 /* PoseNet-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B55139722147EC71004E1266 /* PoseNet-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B551398A2147EC71004E1266 /* Build configuration list for PBXNativeTarget "PoseNet-SwiftTests" */;
+			buildPhases = (
+				B551396F2147EC71004E1266 /* Sources */,
+				B55139702147EC71004E1266 /* Frameworks */,
+				B55139712147EC71004E1266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B55139752147EC71004E1266 /* PBXTargetDependency */,
+			);
+			name = "PoseNet-SwiftTests";
+			productName = "PoseNet-SwiftTests";
+			productReference = B55139732147EC71004E1266 /* PoseNet-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B551397D2147EC71004E1266 /* PoseNet-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B551398D2147EC71004E1266 /* Build configuration list for PBXNativeTarget "PoseNet-SwiftUITests" */;
+			buildPhases = (
+				B551397A2147EC71004E1266 /* Sources */,
+				B551397B2147EC71004E1266 /* Frameworks */,
+				B551397C2147EC71004E1266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B55139802147EC71004E1266 /* PBXTargetDependency */,
+			);
+			name = "PoseNet-SwiftUITests";
+			productName = "PoseNet-SwiftUITests";
+			productReference = B551397E2147EC71004E1266 /* PoseNet-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B55139572147EC70004E1266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Ben;
+				TargetAttributes = {
+					B551395E2147EC70004E1266 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					B55139722147EC71004E1266 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B551395E2147EC70004E1266;
+					};
+					B551397D2147EC71004E1266 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B551395E2147EC70004E1266;
+					};
+				};
+			};
+			buildConfigurationList = B551395A2147EC70004E1266 /* Build configuration list for PBXProject "PoseNet-Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B55139562147EC70004E1266;
+			productRefGroup = B55139602147EC70004E1266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B551395E2147EC70004E1266 /* PoseNet-Swift */,
+				B55139722147EC71004E1266 /* PoseNet-SwiftTests */,
+				B551397D2147EC71004E1266 /* PoseNet-SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B551395D2147EC70004E1266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B551396D2147EC71004E1266 /* LaunchScreen.storyboard in Resources */,
+				B551396A2147EC71004E1266 /* Assets.xcassets in Resources */,
+				B55139682147EC70004E1266 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55139712147EC71004E1266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B551397C2147EC71004E1266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		474C0DE05CA9A3EB685B23C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PoseNet-Swift/Pods-PoseNet-Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TensorSwift/TensorSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TensorSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoseNet-Swift/Pods-PoseNet-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54359D8438039FD804DED1A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoseNet-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B551395B2147EC70004E1266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55139652147EC70004E1266 /* ViewController.swift in Sources */,
+				B55139632147EC70004E1266 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B551396F2147EC71004E1266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55139782147EC71004E1266 /* PoseNet_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B551397A2147EC71004E1266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55139832147EC71004E1266 /* PoseNet_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B55139752147EC71004E1266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B551395E2147EC70004E1266 /* PoseNet-Swift */;
+			targetProxy = B55139742147EC71004E1266 /* PBXContainerItemProxy */;
+		};
+		B55139802147EC71004E1266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B551395E2147EC70004E1266 /* PoseNet-Swift */;
+			targetProxy = B551397F2147EC71004E1266 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B55139662147EC70004E1266 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B55139672147EC70004E1266 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B551396B2147EC71004E1266 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B551396C2147EC71004E1266 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B55139852147EC71004E1266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B55139862147EC71004E1266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B55139882147EC71004E1266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABC9AD63312AFFB569E8FC0 /* Pods-PoseNet-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y997Y6DWC6;
+				INFOPLIST_FILE = "PoseNet-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhang.PoseNet-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B55139892147EC71004E1266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA6D64DAAB877416EC176436 /* Pods-PoseNet-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y997Y6DWC6;
+				INFOPLIST_FILE = "PoseNet-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhang.PoseNet-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B551398B2147EC71004E1266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y997Y6DWC6;
+				INFOPLIST_FILE = "PoseNet-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhang.PoseNet-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseNet-Swift.app/PoseNet-Swift";
+			};
+			name = Debug;
+		};
+		B551398C2147EC71004E1266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y997Y6DWC6;
+				INFOPLIST_FILE = "PoseNet-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhang.PoseNet-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoseNet-Swift.app/PoseNet-Swift";
+			};
+			name = Release;
+		};
+		B551398E2147EC71004E1266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y997Y6DWC6;
+				INFOPLIST_FILE = "PoseNet-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhang.PoseNet-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PoseNet-Swift";
+			};
+			name = Debug;
+		};
+		B551398F2147EC71004E1266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y997Y6DWC6;
+				INFOPLIST_FILE = "PoseNet-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhang.PoseNet-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PoseNet-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B551395A2147EC70004E1266 /* Build configuration list for PBXProject "PoseNet-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55139852147EC71004E1266 /* Debug */,
+				B55139862147EC71004E1266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55139872147EC71004E1266 /* Build configuration list for PBXNativeTarget "PoseNet-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55139882147EC71004E1266 /* Debug */,
+				B55139892147EC71004E1266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B551398A2147EC71004E1266 /* Build configuration list for PBXNativeTarget "PoseNet-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B551398B2147EC71004E1266 /* Debug */,
+				B551398C2147EC71004E1266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B551398D2147EC71004E1266 /* Build configuration list for PBXNativeTarget "PoseNet-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B551398E2147EC71004E1266 /* Debug */,
+				B551398F2147EC71004E1266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B55139572147EC70004E1266 /* Project object */;
+}
